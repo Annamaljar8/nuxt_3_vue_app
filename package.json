@@ -1,0 +1,26 @@
+{
+  "name": "nuxt_3_vue_app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxt/content": "^3.13.0",
+    "@pinia/nuxt": "^0.11.3",
+    "better-sqlite3": "^12.9.0",
+    "nuxt": "^3.21.2",
+    "sass": "^1.99.0",
+    "vuetify": "^4.0.6"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.4.9",
+    "jsdom": "^29.1.0",
+    "vitest": "^4.1.5"
+  }
+}
