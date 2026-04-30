@@ -198,7 +198,7 @@ const totalPages = computed(() => store.totalPages)
 
 function logout() {
   auth.logout()
-  router.push('/login')
+  router.push('/')
 }
 
 function statusColor(status: string) {

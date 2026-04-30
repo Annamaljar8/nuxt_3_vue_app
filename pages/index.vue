@@ -1,18 +1,25 @@
+
 <template>
-  <div class="login-page">
-    <h1>Login</h1>
-    <v-form @submit.prevent="onLogin">
-      <v-text-field
-        v-model="userId"
-        label="User ID"
-        required
-        autofocus
-        prepend-inner-icon="mdi-account"
-        color="primary"
-      />
-      <v-btn type="submit" color="primary" class="mt-4" block>Login</v-btn>
-    </v-form>
-  </div>
+  <v-container class="py-8 login-wrapper">
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8">
+        <v-card class="pa-6">
+          <h1 class="text-h5 font-weight-bold mb-4">Login</h1>
+          <v-form @submit.prevent="onLogin">
+            <v-text-field
+              v-model="userId"
+              label="User ID"
+              required
+              autofocus
+              prepend-inner-icon="mdi-account"
+              color="primary"
+            />
+            <v-btn type="submit" color="primary" class="mt-4" block>Login</v-btn>
+          </v-form>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup lang="ts">
@@ -33,12 +40,12 @@ function onLogin() {
 </script>
 
 <style scoped>
-.login-page {
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.v-container {
+  max-width: 600px;
+}
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  height: 65vh;
 }
 </style>
